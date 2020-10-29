@@ -2,16 +2,13 @@ package Project;
 
 public class Figure
 {
-    private final int width;
-    private final int height;
-
-    public Figure(int width, int height)
+    public static void printFigure(int width, int height)
     {
-        this.width = width;
-        this.height = height;
+        firstPart(width, height);
+        middlePart(width);
+        lastPart(width, height);
     }
-
-    public void firstPart()
+    private static void firstPart(int width, int height)
     {
         for (int i = 0; i <= (height / 2) + 1; i++)
         {
@@ -51,7 +48,7 @@ public class Figure
         }
     }
 
-    public void middlePart()
+    private static void middlePart(int width)
     {
         for (int i = 0; i <= width; i++)
         {
@@ -78,9 +75,9 @@ public class Figure
         }
     }
 
-    public void endPart()
+    private static void lastPart(int width, int height)
     {
-        for (int i = (width / 2) + 2; i <= height; i++)
+        for (int i = 0; i <= height; i++)
         {
             for (int j = 0; j <= width; j++)
             {

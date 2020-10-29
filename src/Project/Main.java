@@ -4,16 +4,12 @@ import java.util.Scanner;
 
 public class Main
 {
-
     public static void main(String[] args)
     {
         int width = readInt("width");
         int height = readInt("height");
 
-        Figure figure = new Figure(width, height);
-        figure.firstPart();
-        figure.middlePart();
-        figure.endPart();
+        Figure.printFigure(width, height);
     }
 
     private static int readInt(String name)
