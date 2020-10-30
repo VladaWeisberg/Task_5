@@ -9,7 +9,8 @@ public class Main
         int width = readInt("width");
         int height = readInt("height");
 
-        Figure.printFigure(width, height);
+        Figure figure = new Figure();
+        figure.printFigure(width, height);
     }
 
     private static int readInt(String name)

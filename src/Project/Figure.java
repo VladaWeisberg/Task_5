@@ -2,13 +2,14 @@ package Project;
 
 public class Figure
 {
-    public static void printFigure(int width, int height)
+    public void printFigure(int width, int height)
     {
-        firstPart(width, height);
-        middlePart(width);
-        lastPart(width, height);
+        printFirstPart(width, height);
+        printMiddlePart(width);
+        printLastPart(width, height);
     }
-    private static void firstPart(int width, int height)
+
+    private void printFirstPart(int width, int height)
     {
         for (int i = 0; i <= (height / 2) + 1; i++)
         {
@@ -48,7 +49,7 @@ public class Figure
         }
     }
 
-    private static void middlePart(int width)
+    private void printMiddlePart(int width)
     {
         for (int i = 0; i <= width; i++)
         {
@@ -75,7 +76,7 @@ public class Figure
         }
     }
 
-    private static void lastPart(int width, int height)
+    private void printLastPart(int width, int height)
     {
         for (int i = 0; i <= height; i++)
         {
